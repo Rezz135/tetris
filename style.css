@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+
+}
+.html{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    width: 1159px;
+    border: solid;
+}
+
+.level{
+    background:linear-gradient(0,rgb(255, 1, 1),rgb(255, 123, 0));
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 150px;
+    left: 210px;
+    font-size: 10px;
+}
+.lable{
+    position: relative;
+    bottom: 330px;
+    left: -400px;
+}
+
+.navt{
+    height: 230px;
+    width: 140px;
+border: solid;
+position: relative;
+    top: 580px;
+    left: 550px;
+}
+.pauses{
+    position: relative;
+    top:110px;
+    left: 40px;
+}
+.dawn{
+    position: relative;
+    top: 40px;
+    left: 48px;
+}
+.Down{
+    position: relative;
+    top: 40px;
+    left: 48px;
+}
+.left{
+    position: relative;
+    top: 100px;
+    
+}
+.right{
+    position: relative;
+    top: 100px;
+    left: 40px;
+}
+.rotait{
+    position: relative;
+    left:-4px;
+}
+.navt button{
+    height: 40px;
+    width: 48px;
+    font-size: 9px;
+    background-color: #ff0000;
+    color: rgb(255, 255, 255);
+}
+.navt button:hover{
+    background: black;
+    color: #fff;
+}
+.level h3{
+position: relative;
+left:15px ;
+bottom: -6px;
+font-size: 15px;
+color: rgb(0, 0, 0);
+}
+.counts{
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    bottom: 730px;
+    border: double;
+    left: 520px;
+    font-size: 10px;
+    height: 100px;
+    width: 100px;
+    opacity: 0.6;
+    color: #fff;
+    background:linear-gradient(45deg,rgb(59, 25, 19),rgba(49, 27, 27, 0.981)) ;
+}
+body{
+    background: linear-gradient(90deg, rgb(36, 32, 32),red, rgb(0, 0, 0));
+    height: 100vh;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tetris{
+    background-color: rgb(184, 102, 35);
+    height: 600px;
+    width: 300px;
+    padding: 0.5vh;
+    border-radius: 0.5vh;
+    display: grid;
+    position: relative;
+    overflow: hidden;
+    bottom: 140px;
+    left:200px;
+    grid-template-columns: repeat(10, auto);
+    grid-template-rows: repeat(20, auto);
+}
+
+.tetris div{
+    height: min(4vh, 7vw);
+    width: min(4vh, 7vw);
+    background-color: rgba(165, 185, 181, 0.205);
+    border-radius: 0.3vh;
+    box-shadow: 
+        inset 3px 3px 3px rgb(0, 0, 0),
+        inset -1px -2px 2px rgba(248, 245, 245, 0.981);
+        
+}
+.whatLevels{
+    position: relative;
+
+    right: -100px;
+    bottom: -100px;
+    display: grid;
+    height: 70px;
+    width: 70px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+.whatLevels:hover~.header{
+    left: 500px;
+
+}
+
+
+.lable{
+    font-size: 10px;
+}
+.levvels:hover{
+    background: rgb(0, 0, 0);
+    color: #fff;
+}
+.levvels{
+    font-size: 10px;
+    width: 50%;
+    height: 33%;
+    border: double;
+    background: #0f97b9;
+    transition: all 0.4s linear;
+}
+.level1{
+    left: 32px ;
+}
+.restarrt{
+    border: none;
+    border-radius:50% ;
+    height: 40px;
+    width: 40px;
+    position: relative;
+    bottom: -530px;
+    left:560px;
+    font-size: 11px;
+    background-color: rgb(116, 40, 40);
+    
+}
+.tetris .ghost{
+    background: rgb(170, 170, 170);
+    opacity: 0.6;
+}
+.tetris .O{
+    background: rgb(238, 255, 0);
+}
+
+.tetris .L{
+    background: rgb(1, 255, 6);
+}
+.tetris .J{
+    background: rgb(248, 194, 0);
+}
+.tetris .S{
+    background: rgb(136, 0, 255);
+}
+.tetris .Z{
+    background: rgb(229, 255, 0);
+}
+.tetris .T{
+    background: #ff0000;
+}
+.tetris .I{
+    background: rgb(255, 123, 0);
+}
+.game-over{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    right: 0px;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    display: none;
+    bottom: 0px;
+    justify-content: center;
+    align-items: center;
+
+
+    z-index: 1;
+}
+.info{
+    height: 800px;
+    width: 600px;
+    border: #000000 double;
+    color: #000000;
+
+
+
+}
+.restart{
+    padding: 25px;
+    border: none;
+    width: 100px;
+    height: 10px;
+    border-radius: 30px;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    font-family: Arial;
+    position: relative;
+    left: 100px;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.restarrt:hover{
+    background: black;
+    color: #fff;
+}
